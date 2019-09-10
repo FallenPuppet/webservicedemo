@@ -22,6 +22,11 @@ public class AuthInterceptor extends AbstractPhaseInterceptor<SoapMessage> {
         super(Phase.PRE_PROTOCOL);
     }
 
+    /**
+     * webservice请求头添加访问认证拦截
+     * @param message
+     * @throws Fault
+     */
     @Override
     public void handleMessage(SoapMessage message) throws Fault {
 
